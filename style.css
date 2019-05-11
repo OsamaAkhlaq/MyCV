@@ -1,79 +1,202 @@
 *{
 	margin: 0;
-	padding:0;
-	-webkit-box-sizing:border-box;
+	padding: 0;
 }
 html,body
 {
-	font-family:Bebas Neue;
+	width: 100%;
+	height: 100%;
 	font-size: 14px;
 	font-weight: normal;
-	height: 100%;
-	background: url("jamesbond.jpg") no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
 }
-.header{
-	padding: 15px 35px;
-	display:inline-block;
+.background
+{
+	width: 100%;
+	height: 100%;
+	background-image: url(boss.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-y:auto;
+}
+.nav
+{
+	width:350px;
+	height: auto;
+	background-color: gray;
+	position: absolute;
+	top: 100px;
+}
+.nav a{
+	text-decoration: none;
+	font-size: 28px;
+	font-family: verdana;
+	width: 100%;
+	height:90px;
+	margin:5px 0;
+	float: left;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	line-height: 90px;
+	text-align: center;
+	transition: 300ms;
+}
+
+a.active,.nav a:hover
+{
+	background-color: white;
+	color: black;
 	width: 100%;
 
 }
+.a{width: 95%;}
+.b{width: 95%;}
+.c{width: 95%;}
+.d{width: 95%;}
 
-.logo
+.content{
+	position: absolute;
+	width: 900px;
+	right :0;
+	min-height: 500px;
+	height: auto;
+	top:10%;
+	/*background-color: red;*/
+}
+
+.home
 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: white;
+	font-family: verdana;
+	text-transform: uppercase;
+	bottom: -120px
+}
+.home h1{
+	font-size: 95px;
+	padding-right:90px;
+	text-transform: uppercase;
+	border-bottom: 1px solid white;
+
+}
+.home h3
+{
+	font-size: 28px;
+	padding: 5px 0;
+	opacity: 0.8;
+	color:white;
+	font-family: verdana;
+}
+.about
+{
+  position: absolute;
+  right: 0
+  top: 10px;
+  color: white;
+  font-family: century gothic;
+  padding: 0 60px;
+  display: none;
+}
+.about p
+{
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 15px;
+}
+
+.portfolio
+{
+  position: absolute;
+  right: 0
+  top: 10px;
+  color: white;
+  font-family: century gothic;
+  padding: 0 60px;
+  display: none;
+}
+.portfolio p
+{
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 15px;
+}
+
+
+.contact
+{
+  position: absolute;
+  right: 0
+  top: 10px;
+  color: white;
+  font-family: century gothic;
+  padding: 0 60px;
+  display: none;
+}
+.contact p
+{
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 15px;
+}
+
+
+.gallery{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	display: none;
+}
+
+.gallery .image
+{
+	width: 25%;
+	margin: 2%;
 	float: left;
 }
-
-
-.img
+.image img
 {
-	max-height: 100%;
+	width: 100%;
+	transition: all ease 0.5s;
+	transform: scale(1);
+}
+.image img:hover
+{
+	transform: scale(1.2);
+
 }
 
 
-.menu{
-	float: right;
+
+
+.videos{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	/* border:1px solid red; */
+	display: none;
 }
-.menu ul li
+.videos .vid
 {
-	display: inline-block;
+	width: 25%;
+	margin: 2%;
 	float: left;
-	line-height: 20px;
-	margin-top: 15px;
+}
+.vid video
+{
+	width: 100%;
+	transition: all ease 0.5s;
+	transform: scale(1);
+}
+.vid video:hover
+{
+	transform: scale(1.2);
+
+}
 
 
-}
-.menu ul li a{
-text-decoration: none;
-color: #fff;
-font-size: 24px;
-padding: 5px 20px;
-}
-
-.menu ul li a:hover
-{
-	color: #f6ff00;
-	letter-spacing: 5px;
-}
-
-.name
-{
-	width: 350px;
-	margin-top: 200px;
-	text-align: right;
-	margin-left: 15px;
-}
-.name h5
-{
-	color: #f6ff00;
-	font-size: 20px;
-	letter-spacing: 7px;
-}
-.name h1
-{
-	color: #fff;
-	font-size: 90px;
-	line-height: 86px;
-	letter-spacing: 5px;
-}
